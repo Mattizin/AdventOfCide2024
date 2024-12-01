@@ -1,4 +1,4 @@
-print("Day 01 Part 01:")
+print("Day 01 Part 1:")
 # file = "1_test"
 file = "1_puzzle"
 with open(f'aoc2024/day01/data/{file}.txt') as f:
@@ -23,4 +23,12 @@ distances = []
 for idx, x in enumerate(list1):
     distances.append(abs(x-list2[idx]))
 
-print(sum(distances))
+print(f"Result Day01 Part 1: {sum(distances)}")
+
+
+print("Day01 Part 2:")
+scores = []
+for num in list1:
+    scores.append(num * list2.count(num))
+
+print(f"Result Day01 Part 2: {sum(scores)}")
